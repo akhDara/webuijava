@@ -20,4 +20,5 @@ public class BasePageHome {
         actions = new Actions(driver);
         PageFactory.initElements(driver, this);
     }
+    //комментарий чтобы опять создать коммит
 }

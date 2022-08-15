@@ -38,6 +38,7 @@ public class PageObjectHomeTest {
         new MainPageHome(driver).clickToCinemaButton()
                 .switchToOkkoPage("https://www.afisha.ru/movie/okko-soon/");
     }
+    //комментарий чтобы опять создать коммит
 
 
     @AfterEach

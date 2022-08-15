@@ -32,4 +32,5 @@ public class MainPageHome extends BasePageHome {
                 .perform();
         return new SuccessfulHoverCinemaButton(driver);
     }
+    //комментарий чтобы опять создать коммит
 }

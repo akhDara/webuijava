@@ -28,4 +28,5 @@ public class SuccessAddToCartPage extends BasePage{
         Assertions.assertEquals(expectedSumma, totalSumma.getText());
         return this;
     }
+    //комментарий чтобы опять создать коммит
 }

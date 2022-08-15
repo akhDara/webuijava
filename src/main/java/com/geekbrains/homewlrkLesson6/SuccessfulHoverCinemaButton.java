@@ -18,4 +18,5 @@ public class SuccessfulHoverCinemaButton extends BasePageHome{
         Assertions.assertEquals(driver.getCurrentUrl(), actualUrl);
         return this;
     }
+    //комментарий чтобы опять создать коммит
 }

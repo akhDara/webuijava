@@ -20,5 +20,5 @@ public class MainPage extends BasePage {
         singInButton.click();
         return new LoginPage(driver);
     }
-
+    //комментарий чтобы опять создать коммит
 }

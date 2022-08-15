@@ -24,5 +24,5 @@ public class SuccessfulFramePopUp extends BasePageHome{
         Assertions.assertEquals(expectedTitle, actualTitle.getText());
         return this;
     }
-
+    //комментарий чтобы опять создать коммит
 }

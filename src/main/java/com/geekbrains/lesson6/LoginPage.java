@@ -32,9 +32,5 @@ public class LoginPage extends BasePage {
         submitLogin.click();
         return new MainPage(driver);
     }
-
-
-
-
-
+    //комментарий чтобы опять создать коммит
 }

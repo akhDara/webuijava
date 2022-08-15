@@ -32,9 +32,5 @@ public class TShortsPage extends BasePage{
         addToCartButton.click();
         return new SuccessAddToCartPage(driver);
     }
-
-
-
-
-
+    //комментарий чтобы опять создать коммит
 }

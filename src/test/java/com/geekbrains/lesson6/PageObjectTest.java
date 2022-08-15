@@ -47,6 +47,7 @@ public class PageObjectTest {
                 .checkTotalSumma("$18.51");
 
     }
+    //комментарий чтобы опять создать коммит
 
     @AfterEach
     void killBrowser(){

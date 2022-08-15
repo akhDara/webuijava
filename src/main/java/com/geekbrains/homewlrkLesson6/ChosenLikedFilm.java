@@ -21,4 +21,5 @@ public class ChosenLikedFilm extends BasePageHome{
         likeFilm.click();
         return new SuccessfulFramePopUp(driver);
     }
+    //комментарий чтобы опять создать коммит
 }
