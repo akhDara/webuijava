@@ -9,5 +9,8 @@
         <module name="webuijavahomework" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="webuijavahomework" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
