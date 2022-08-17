@@ -1,5 +1,6 @@
 package com.geekbrains.homewlrkLesson6;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,11 +19,12 @@ public class SuccessfulFramePopUp extends BasePageHome{
     @FindBy(xpath = "//h2[.='Вход']")
     private WebElement actualTitle;
 
+    @Step("Переход на динамический фрейм с логином для входа")
     public SuccessfulFramePopUp switchToFrameSet(String expectedTitle) {
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@src, 'login')]")));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login")));
         Assertions.assertEquals(expectedTitle, actualTitle.getText());
         return this;
     }
-    //комментарий чтобы опять создать коммит
+
 }

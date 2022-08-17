@@ -1,5 +1,6 @@
 package com.geekbrains.homewlrkLesson6;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -18,6 +19,7 @@ public class MainPageHome extends BasePageHome {
     @FindBy(xpath = "//a[@data-test='LINK ITEM-NAME ITEM-URL' and contains(@href, 'movie')]/h2")
     private List<WebElement> filmList;
 
+    @Step("Найти выбранный фильм")
     public ChosenLikedFilm selectFilm() {
         filmList.stream().filter(s -> s.getText().contains("Русалка и дочь короля")).findFirst().get().click();
         return new ChosenLikedFilm(driver);
@@ -26,11 +28,12 @@ public class MainPageHome extends BasePageHome {
     @FindBy(xpath = "//a[.='КИНО']")
     private WebElement cinemaButton;
 
+    @Step("Клик на кнопку 'Кино'")
     public SuccessfulHoverCinemaButton clickToCinemaButton() {
         actions.moveToElement(cinemaButton)
                 .build()
                 .perform();
         return new SuccessfulHoverCinemaButton(driver);
     }
-    //комментарий чтобы опять создать коммит
+
 }
