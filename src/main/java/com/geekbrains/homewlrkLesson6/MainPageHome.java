@@ -19,16 +19,16 @@ public class MainPageHome extends BasePageHome {
     @FindBy(xpath = "//a[@data-test='LINK ITEM-NAME ITEM-URL' and contains(@href, 'movie')]/h2")
     private List<WebElement> filmList;
 
-    @Step("Найти выбранный фильм")
+    @Step("Найти дайджест Кино")
     public ChosenLikedFilm selectFilm() {
-        filmList.stream().filter(s -> s.getText().contains("Русалка и дочь короля")).findFirst().get().click();
+        filmList.stream().filter(s -> s.getText().contains("Легенды Орленка")).findFirst().get().click();
         return new ChosenLikedFilm(driver);
     }
 
     @FindBy(xpath = "//a[.='КИНО']")
     private WebElement cinemaButton;
 
-    @Step("Клик на кнопку 'Кино'")
+    @Step("Клик на выбранный фильм")
     public SuccessfulHoverCinemaButton clickToCinemaButton() {
         actions.moveToElement(cinemaButton)
                 .build()

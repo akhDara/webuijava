@@ -13,7 +13,7 @@ public class BasePageHome {
     public WebDriverWait webDriverWait;
     Actions actions;
 
-    public final static  String AFISHA_BASE_URL = "https://afisha.ru";
+    public final static  String AFISHA_BASE_URL = "https://www.afisha.ru/";
 
     public  BasePageHome (WebDriver driver) {
         this.driver = driver;
