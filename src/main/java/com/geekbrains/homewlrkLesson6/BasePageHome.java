@@ -1,5 +1,6 @@
 package com.geekbrains.homewlrkLesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -20,5 +21,5 @@ public class BasePageHome {
         actions = new Actions(driver);
         PageFactory.initElements(driver, this);
     }
-    //комментарий чтобы опять создать коммит
+
 }

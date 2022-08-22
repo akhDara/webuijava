@@ -1,5 +1,6 @@
 package com.geekbrains.homewlrkLesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,6 +15,7 @@ public class ChosenLikedFilm extends BasePageHome{
     @FindBy(xpath = "//section[@data-test='PAGE-SECTION TITLE-SECTION']//button[@data-test='BUTTON FAVORITE']")
     private WebElement likeFilm;
 
+    @Step("Пометить лайком выбранный фильм")
     public SuccessfulFramePopUp likeMoveChosen(){
 
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(
@@ -21,5 +23,5 @@ public class ChosenLikedFilm extends BasePageHome{
         likeFilm.click();
         return new SuccessfulFramePopUp(driver);
     }
-    //комментарий чтобы опять создать коммит
+
 }
