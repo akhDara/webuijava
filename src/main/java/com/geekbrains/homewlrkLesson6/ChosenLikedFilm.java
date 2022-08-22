@@ -15,7 +15,7 @@ public class ChosenLikedFilm extends BasePageHome{
     @FindBy(xpath = "//section[@data-test='PAGE-SECTION TITLE-SECTION']//button[@data-test='BUTTON FAVORITE']")
     private WebElement likeFilm;
 
-    @Step("Пометить лайком выбранный фильм")
+    @Step("Клик на 'Добавить в Избранное'")
     public SuccessfulFramePopUp likeMoveChosen(){
 
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(

@@ -19,7 +19,7 @@ public class SuccessfulFramePopUp extends BasePageHome{
     @FindBy(xpath = "//h2[.='Вход']")
     private WebElement actualTitle;
 
-    @Step("Переход на динамический фрейм с логином для входа")
+    @Step("Проверяем появление окошечка авторизации")
     public SuccessfulFramePopUp switchToFrameSet(String expectedTitle) {
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[contains(@src, 'login')]")));
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("login")));
